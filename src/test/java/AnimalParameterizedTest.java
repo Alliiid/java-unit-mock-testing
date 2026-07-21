@@ -2,9 +2,7 @@ import com.example.Animal;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
@@ -27,7 +25,7 @@ public class AnimalParameterizedTest {
     }
 
     @Test
-    public void testGetFoodValid() throws Exception {
+    public void testGetFoodReturnsExpectedListForPredator() throws Exception {
         assertEquals(expectedFood, animal.getFood(animalKind));
     }
 }
